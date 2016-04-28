@@ -17,7 +17,7 @@
     width: 300px
 }
 
-.GJForm , .GJentry{
+.GJForm , .GJentry {
     margin: 0 auto;
     width: 500px
 }
@@ -46,6 +46,8 @@ input:focus {
     box-shadow: 0 0 10px #719ECE;
 }
 
+/*General Journal Table Styling*/
+
 .Main-table-in-General{
     border: 2px solid lightgray;
 }
@@ -67,3 +69,22 @@ td.indent{
     padding: 10px;
     
 }
+/*Ledger Posting Designing*/
+
+.Main-table-in-ledger  {
+    border: 1px solid red;
+}
+.Main-table-in-ledger-Row{
+    
+}
+.Main-table-in-ledger-Date{
+    padding: 5px;
+    border: 1px solid red;
+}
+.Ledger{
+    border: 1px solid black;
+    width: 300px;
+    float: left;
+    
+}
+

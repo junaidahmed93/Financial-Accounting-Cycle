@@ -40,6 +40,11 @@ angular.module('starter', ['ionic'])
     templateUrl : 'views/generalentry.html',
     controller : 'generalentry'
   })
+  .state('ledger',{
+    url : '/ledger',
+    templateUrl : 'views/ledger.html',
+    controller : 'ledger'
+  });
   
   $urlRouterProvider.otherwise('dashboard');
 })

@@ -1,0 +1,43 @@
+<ion-nav>
+    <ion-content>
+        <div class="bar bar-header bar-energized">
+            <h1 class="title">Accounting Cycle</h1>
+        </div>
+        <br> <br>
+        <div class="button-bar">
+            <button class="button button-block icon-left ion-chevron-left button-positive" ui-sref="generalentry">Back</button>
+
+            <a class="button button-block icon-right ion-chevron-right button-calm" ui-sref="ledger">Next</a>
+        </div>
+
+        <div >
+            <div ng-repeat="(key,value) in testing" class="Ledger">
+                {{key}} 
+
+
+                <table class="Main-table-in-ledger">
+                    <tr class="Main-table-in-ledger-Row">
+                        <td class="Main-table-in-ledger-Date">Debit</td>
+                        <td class="Main-table-in-ledger-Date">Balance</td>
+                        <td class="Main-table-in-ledger-Date">Credit</td>
+                        <td class="Main-table-in-ledger-Date">Balance</td>
+                    </tr>
+
+                    <tr ng-repeat="(keyN , valueN) in value" class="Main-table-in-ledger-Row">
+                        <td class="Main-table-in-ledger-Date">{{valueN.Debit}}</td>
+                        <td class="Main-table-in-ledger-Date"> {{valueN.DebitBalance}}</td>
+                        <td class="Main-table-in-ledger-Date">{{valueN.Credit}}</td>
+                        <td class="Main-table-in-ledger-Date">{{valueN.CreditBalance}}</td>
+                    </tr>
+
+
+                </table>
+
+            </div>
+        </div>
+
+
+
+
+    </ion-content>
+</ion-nav>
