@@ -1,0 +1,24 @@
+<ion-nav>
+
+    <ion-content>
+        <div class="bar bar-header bar-energized">
+            <h1 class="title">Accounting Cycle</h1>
+        </div>
+        <br> <br>
+        <div class="button-bar">
+            <button class="button button-block icon-left ion-star button-positive" ng-click="test = true">General Entry</button>
+
+        <a class="button button-block icon-right ion-chevron-right button-calm" ui-sref="generalentry">Next</a>
+        </div>
+        
+        <div class="GJForm" ng-if="test">
+            <input type="text" ng-model="entry.date" placeholder="Date">
+        <input type="text" ng-model="entry.debitTitle" placeholder="Debit Title">
+        <input type="text" ng-model="entry.debitAmount" placeholder="Debit Amount">
+        <input type="text" ng-model="entry.creditTitle" placeholder="Credit Title">
+        <input type="text" ng-model="entry.creditAmount" placeholder="Credit Amount ">
+        <button  class="button button-block button-positive" type="submit" ng-click="add(entry)">submit</button>
+        </div>
+        
+    </ion-content>
+</ion-nav>

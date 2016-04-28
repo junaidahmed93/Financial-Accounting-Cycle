@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-content class="center">
+        <div>
+            <img src="img/easy-accounting-icon.png" alt="">
+        </div>
+        
+        <div class="login-page">
+		<form ng-submit = "doLogin()">
+			<div class="list">
+				<label class="item item-input">
+					<span class="input-label">Email </span>
+					<input type="text" ng-model = "user.email">
+				</label>
+                
+                
+				<label class="item item-input">
+					<span class="input-label">Password</span>
+					<input type="password" ng-model = "user.password">
+				</label>
+			</div>
+			<div class="button-bar">
+				<button class="button button-calm" type="submit">Login</button>
+				<a class="button button-calm" ui-sref="signup">Sign up First</a>
+			</div>
+            <button > <a ui-sref="dashboard">Hello</a> </button>
+		</form>
+        </div>
+    </ion-content>
+</ion-view>

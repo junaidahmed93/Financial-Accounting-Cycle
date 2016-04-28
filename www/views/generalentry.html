@@ -1,0 +1,38 @@
+<ion-nav>
+    <ion-content>
+        <div class="bar bar-header bar-energized">
+            <h1 class="title">Accounting Cycle</h1>
+        </div>
+        <br> <br>
+        <div class="button-bar">
+            <button class="button button-block icon-left ion-chevron-left button-positive" ui-sref="dashboard">Back</button>
+
+        <a class="button button-block icon-right ion-chevron-right button-calm" ui-sref="generalentry">Next</a>
+        </div>
+        
+        <div class="GJentry">
+
+            <table width="100%" class="Main-table-in-General">
+
+                <tr ng-repeat="(key,value) in generalJournal" class="Main-table-in-General-Row">
+                    <td class="Main-table-in-General-Data">{{key}}</td>
+                    <td>
+                        <table width="100%" class="Sub-table-in-General">
+                            <tr ng-if="$index == 0" class="Sub-table-in-General-Row">
+                                <th width="200" class="Sub-table-in-General-Data">Title</th>
+                                <th width="50" >Debit</th>
+                                <th width="50">Credit</th>
+                            </tr>
+                            <tr ng-repeat="(xkey,xvalue) in value" class="Sub-table-in-General-Row">
+                                <td width="200" class="indent" class="Sub-table-in-General-Data">{{xkey}}</td>
+                                <td width="50" class="Sub-table-in-General-Data">{{xvalue.Debit}}</td>
+                                <td width="50"class="Sub-table-in-General-Data">{{xvalue.Credit}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </ion-content>
+</ion-nav>
