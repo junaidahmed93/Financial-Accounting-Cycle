@@ -44,6 +44,11 @@ angular.module('starter', ['ionic'])
     url : '/ledger',
     templateUrl : 'views/ledger.html',
     controller : 'ledger'
+  })
+  .state('trailbalance',{
+    url : '/trailbalance',
+    templateUrl : 'views/trailbalance.html',
+    controller : 'ledger'
   });
   
   $urlRouterProvider.otherwise('dashboard');

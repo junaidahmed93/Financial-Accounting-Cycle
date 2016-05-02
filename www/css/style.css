@@ -88,3 +88,18 @@ td.indent{
     
 }
 
+.TrailBalance{
+     margin: 0 auto;
+    width: 200px;
+   
+}
+
+.Main-table-in-TrailBalance{
+    border: 1px solid lightgray;
+}
+.Main-table-in-TrailBalance-Row{
+    border: 1px solid lightgray;
+}
+.Main-table-in-TrailBalance-Data{
+    border: 1px solid lightgray;
+}

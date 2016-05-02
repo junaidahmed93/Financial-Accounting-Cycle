@@ -1,0 +1,38 @@
+<ion-nav>
+    <ion-content>
+        <div class="bar bar-header bar-energized">
+            <h1 class="title">Accounting Cycle</h1>
+        </div>
+        <br> <br>
+        <div class="button-bar">
+            <button class="button button-block icon-left ion-chevron-left button-positive" ui-sref="generalentry">Back</button>
+
+            <a class="button button-block icon-right ion-chevron-right button-calm" ui-sref="ledger">Next</a>
+        </div>
+
+
+        <div class="TrailBalance">
+            <table class="Main-table-in-TrailBalance">
+                <tr class="Main-table-in-TrailBalance-Row">
+                    <td class="Main-table-in-TrailBalance-Data">Account Title</td>
+                    <td class="Main-table-in-TrailBalance-Data">Debit</td>
+                    <td class="Main-table-in-TrailBalance-Data">Credit</td>
+                </tr>
+                <tr ng-repeat="(key,value) in testing" class="Main-table-in-TrailBalance-Row">
+                    <td>{{key}}</td>
+
+                    <td ng-repeat="(keyN , valueN) in value" ng-if="$last" class="Main-table-in-TrailBalance-Data"> {{valueN.FinalDebitBalance}} </td>
+                    <td ng-repeat="(keyN , valueN) in value" ng-if="$last" class="Main-table-in-TrailBalance-Data"> {{valueN.FinalCreditBalance}} </td>
+
+                </tr>
+                <tr  class="Main-table-in-TrailBalance-Row">
+                    <td class="Main-table-in-TrailBalance-Data"></td>
+                    <td class="Main-table-in-TrailBalance-Data"> <strong>{{TotalDebitofTrailBalance}}</strong> </td>
+                    <td class="Main-table-in-TrailBalance-Data"> <strong>{{TotalCreditofTrailBalance}}</strong> </td>
+                </tr>
+            </table>
+        </div>
+
+        </div>
+    </ion-content>
+</ion-nav>

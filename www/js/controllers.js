@@ -154,7 +154,7 @@ app.controller('ledger',function($scope){
                 creditArr.push($scope.testing[AccountName][AccountDate].FinalCreditBalance);
                 console.log(creditArr);
                 var j=0;
-                for(i=0; i<debitArr.length; i++)
+                for(i=0; i<creditArr.length; i++)
                 {   j= j+creditArr[i];
                     console.log(creditArr[i]);
                     console.log(j);
